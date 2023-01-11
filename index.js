@@ -10,6 +10,8 @@ import * as dotenv from 'dotenv'
 import socketHandler  from './utils/socketHandler.js'
 
 const port = process.env.PORT || 3000
+console.log('port: ' + process.env.PORT)
+
 dotenv.config()
 
 // initialize express
@@ -123,5 +125,5 @@ app.post('/setNickname', async (req, res) => {
 })
 
 server.listen(port, () => {
-    console.log('socket.io listening on *:' + port);
+    console.log('socket.io listening on :' + port);
 });
