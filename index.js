@@ -9,8 +9,8 @@ import * as dotenv from 'dotenv'
 
 import socketHandler  from './utils/socketHandler.js'
 
-const port = process.env.PORT || 3000
-console.log('port: ' + process.env.PORT)
+const port = process.env.SOCKET_PORT || 3000
+console.log('port: ' + process.env.SOCKET_PORT)
 
 dotenv.config()
 
